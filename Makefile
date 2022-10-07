@@ -16,9 +16,9 @@ OBJ = $(SRC:.c=.o)
 
 HDRS = push_swap.h
 
-CC = gcc
+CC = gcc -g
 
-FLAGS = -g -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror
 
 RM = rm -f
 
@@ -35,5 +35,3 @@ fclean: clean
 		$(RM) $(NAME) 
 
 re:	fclean all
-
-.PHONY: all clean fclean
